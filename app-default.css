@@ -40,7 +40,8 @@ z-index:80;
 }
 
 #pageContent {
-  position:fixed;
+  position:sticky;
+  z-index:40;
   left: 0;
   top: 25px;
   }
