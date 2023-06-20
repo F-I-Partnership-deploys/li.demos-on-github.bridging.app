@@ -40,7 +40,7 @@ z-index:80;
 }
 
 #pageContent {
-  position: relative;
+  position: fixed;
   z-index:40;
   left: 0;
   top: 50px;
