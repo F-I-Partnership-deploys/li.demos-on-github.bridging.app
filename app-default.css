@@ -39,12 +39,17 @@ color: white;
 z-index:80;
 }
 
-#pageContent {
-  position: fixed;
-  z-index:40;
-  left: 0;
-  top: 50px;
+content{ 
+  position: sticky;
+  padding-top: 20px;
+  overflow-y: scroll;
   }
+  
+  #pageContent {
+    position: sticky;
+    padding-top: 20px;
+    z-index:40;
+    }
 
   pre {
     white-space: pre-wrap;       /* css-3 */
