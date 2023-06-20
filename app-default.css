@@ -39,6 +39,12 @@ color: white;
 z-index:80;
 }
 
+#pageContent {
+  position:fixed;
+  left: 0;
+  top: 25px;
+  }
+
 footer {
   position: fixed;
   left: 0;
