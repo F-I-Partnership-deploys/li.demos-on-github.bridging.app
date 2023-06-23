@@ -83,3 +83,50 @@ footer>div>a{
  color: white;
  z-index: 100;
 }
+
+
+table {
+margin-left: auto;  
+margin-right: auto;
+position: fixed;
+left: 0;
+top:25px;
+position:sticky;
+z-index:40;
+}
+
+table>caption {
+display: none;
+}
+
+table thead {
+height: 40px;
+background-color: black;
+color: white;
+top:25px;
+position:sticky;
+text-align:center;
+z-index: 40;
+}
+
+table tbody{
+padding-bottom: 5em;
+}
+
+table td:nth-child(1) {
+overflow: hidden;
+font-size: 10pt;
+z-index: 40;
+word-wrap: break-word;
+}
+
+table td:nth-child(2) {
+display: none;
+}
+
+table td:nth-child(3) {
+overflow: hidden;
+font-size: 10pt;
+z-index: 40;
+word-wrap: break-word;
+}

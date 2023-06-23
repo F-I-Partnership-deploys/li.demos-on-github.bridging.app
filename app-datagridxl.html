@@ -5,8 +5,24 @@
 <script src="app-datasets.js"></script>
 <script src="app-pwa.js"></script>
 <script src="app-main.js"></script>
-</style><script src="jquery.min.js"></script> <script src="sheetrock.min.js"></script>
+<script src="papaparse.min.js"></script>
+<script src="datagridxl2.js"></script>
 <link rel="stylesheet" href="app-default.css">
+
+<style>
+#grid {
+  height: 400px;
+}
+
+#toolbar {
+  background: var(--tableodd);
+  margin-bottom: 12px;
+  padding: 8px;
+
+  display: flex;
+  justify-content: space-between;
+}
+</style>
 
 <meta name="application-name" content="Bridging.App">
 <title>/|BA|\ UK Bridging Companies' Rates, Loan Criteria & Products</title>
@@ -16,16 +32,32 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"> <link rel="icon" type="image/x-icon" href="favicon.ico"><link rel="apple-touch-icon" href="viapp0.png"></head>
 <body onload="pLF()"><header><a id="appMenuL" href="index.html">/| BA |\</a><span><a  id="infogo" href="en-legal-data-rights-minimal.html">  - Your data is not collected by us by default.</a> </span><span id="appMenuR"><a id="appMenuLogin" href="app-login.html">Login</a></span></header><content><div id="pageContent">
 
-<h1>Status of Bridging.App web properties</h1>
-<p>Everything seems to be going as expected</p>
 
-<table id="iDT" border=1 frame=void rules=rows><caption>Bridging.App Data</caption><thead><tr ><td>Name</td><td>Link</td><td>Description</td></tr></thead><!----->
 
-                    <script>
-                        // Load an entire worksheet.
-                        $('#iDT').sheetrock({url: statusSpreadsheet});
-                    </script>
+<div id="grid"></div>
 
-<!-----></table>
+</div></content><footer><div><a href="en-compliance-default-warning.html">Your home/assets are at risk if you fail to keep to loan terms.</a></div><div><a href="en-about-fi.html">F-I.dev partnership</a> <a href="en-legal-copyright.html"> &copy; 2023</a> |<a href="en-legal-spa-website-terms-of-use.html"> terms</a> | <a href="en-legal-data-rights-minimal.html">privacy</a> | <a href="en-about-app.html">about</a> | <a href="en-contact.html">contact</a></div><footer><script>rSW();</script>
+<script>
+// create empty grid
+var grid = new DataGridXL("grid", {
+  data: DataGridXL.createEmptyData(20,20)
+});
 
-</div></content><footer><div><a href="en-compliance-default-warning.html">Your home/assets are at risk if you fail to keep to loan terms.</a></div><div><a href="en-about-fi.html">F-I.dev partnership</a> <a href="en-legal-copyright.html"> &copy; 2023</a> |<a href="en-legal-spa-website-terms-of-use.html"> terms</a> | <a href="en-legal-data-rights-minimal.html">privacy</a> | <a href="en-about-app.html">about</a> | <a href="en-contact.html">contact</a></div><footer><script>rSW();</script></body></html>
+Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vS_TzCak9Xx3vdSpUSmrUfVayxgulOwSGlIFWe42OolrRAekbDkk1O-7QRMcWkJ4KC0T-tyzwLkpTLV/pub?output=csv", {
+  download: true,
+  complete: function(results) {
+    createGrid(results);
+  }
+});
+
+function createGrid(data){
+  
+  var grid = new DataGridXL("grid", {
+    data: data
+  });
+
+};
+</script>
+
+
+</body></html>
