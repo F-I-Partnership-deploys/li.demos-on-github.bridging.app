@@ -43,7 +43,7 @@ var grid = new DataGridXL("grid", {
   data: DataGridXL.createEmptyData(20,20)
 });
 
-Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vS_TzCak9Xx3vdSpUSmrUfVayxgulOwSGlIFWe42OolrRAekbDkk1O-7QRMcWkJ4KC0T-tyzwLkpTLV/pub?output=csv", {
+Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vS_TzCak9Xx3vdSpUSmrUfVayxgulOwSGlIFWe42OolrRAekbDkk1O-7QRMcWkJ4KC0T-tyzwLkpTLV/pub?gid=0&single=true&output=csv", {
   download: true,
   complete: function(results) {
     createGrid(results);
