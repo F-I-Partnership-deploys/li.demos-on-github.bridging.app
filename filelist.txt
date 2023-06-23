@@ -17,7 +17,6 @@ workbox-sw.js.map				Code Map
 
 
 // Minimal Compliance Documentation Pages for PWA
-template-page.html	Documentation template	DEV
 en-about-fi.html					About FI
 en-legal-copyright.html
 en-legal-spa-website-terms-of-use.html
@@ -30,7 +29,7 @@ en-contact.html
 404.html							404 Error page
 app-default.css						Css for all PWA & compliancepages
 app-pwa.js							PWA functions for pages except index.html
-app-pwa-var.js						SW and versioning Vars
+app-pwa-vars.js						SW and versioning Vars
 app-main.js						Main Application
 
 
@@ -38,8 +37,13 @@ app-main.js						Main Application
 //MAIN APP FILES
 
 app-main.html						Main Application
-app-login.html
+app-login.html						Placeholder
 404.html							404 Error page
+app-datasets.js						JS/JSON of datasets
+app-interface.js					Get HTML page to App
+app-main.js						Main Application
+
+
 
 
 faveicon.ico		Lcon file		Used by all pages
@@ -52,7 +56,8 @@ sitemap.xml						Sitemap for Bing
 README.md
 LICENSE.md
 .gitnore
-
+template-page.html	Documentation template	DEV
+template-app.html		Documentation template	DEV
 
 
 
