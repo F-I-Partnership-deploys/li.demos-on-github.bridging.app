@@ -25,7 +25,7 @@ fetch(px)
 
 // -------------------- End of file -------------------- 
   if (autorun){
-  cl('...autorun');
+  cl('...autorun to load data');
   pLD(dLS);
   cl('data should be loaded');
   setTimeout(() => {
@@ -35,7 +35,13 @@ fetch(px)
     cl('SortA should be done');
   }, 1000);
 }else{
-    cl('Skipped autorun');
+    cl('Skipped autorun to load data.');
+    cl('Making links on main...');
+    pLF();
+    cl('...Links done.');
+    cl('Initiating SortA...');
+    sorta(document.getElementById("iDT"));  
+    cl('SortA done.');
 }
 
 function rmiDT(){
@@ -43,6 +49,11 @@ const element = document.getElementById("iDT");
 element.remove(); // Removes thetable with the 'iDT' id
 }
 
-cl('Doing links on first run');
-pLF();
+
+
+
+
+
+
+
 cl("Reached End of app-main.js");
