@@ -6,7 +6,7 @@ const URLtoSW = "/sw" + sWTSV + ".js";
 var dLS = ukGoogleCSV; // Pick CSV Source from app-datasets.js or URL String of own source
 // -------------------- End index section --------------------
 
-var autorun = true;
+var autorun = false;
 
 var csvData = "results";
 var iGrid = "results";
