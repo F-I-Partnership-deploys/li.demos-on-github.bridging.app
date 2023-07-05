@@ -40,7 +40,7 @@ fetch(px)
     pLF();
     cl('...Links done.');
     var findIndexTable =  document.getElementById('iDT');
-    if (typeof(findIndexTable) != 'undefined' && element != null)
+    if (typeof(findIndexTable) != 'undefined' && findIndexTable != null)
     {
       cl('Initiating SortA...');
       sorta(document.getElementById("iDT")); 
