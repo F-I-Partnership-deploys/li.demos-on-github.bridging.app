@@ -1,4 +1,4 @@
-cl("Starting Main App Code");
+cl("Starting Main App Code...");
 // Main App Code
 
 // (A) GET HTML TABLE
@@ -36,13 +36,13 @@ fetch(px)
     cl('Skipped autorun to load data.');
     cl('Making links on main...');
     pLF();
-    cl('...Links done.');
+    cl('...Links on main done.');
     var findIndexTable =  document.getElementById('iDT');
     if (typeof(findIndexTable) != 'undefined' && findIndexTable != null)
     {
       cl('Initiating SortA...');
       sorta(document.getElementById("iDT")); 
-      cl('SortA done.');
+      cl('..SortA done.');
     }else{
       cl('No tabele detected to allow sort.');
     }
