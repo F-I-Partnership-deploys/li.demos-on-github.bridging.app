@@ -39,10 +39,19 @@ fetch(px)
     cl('Making links on main...');
     pLF();
     cl('...Links done.');
-    cl('Initiating SortA...');
-    sorta(document.getElementById("iDT"));  
-    cl('SortA done.');
+    var element =  document.getElementById('iDT');
+    if (typeof(element) != 'undefined' && element != null)
+    {
+      cl('Initiating SortA...');
+      sorta(document.getElementById("iDT")); 
+      cl('SortA done.');
+    }else{
+      cl('No tabele detected to allow sortsort.');
+    }
+    
 }
+
+
 
 function rmiDT(){
 const element = document.getElementById("iDT");
