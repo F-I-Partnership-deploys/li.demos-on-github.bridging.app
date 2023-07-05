@@ -1,8 +1,6 @@
 cl("Starting Main App Code");
 // Main App Code
 
-
-
 // (A) GET HTML TABLE
 let table = document.getElementById("datafromcsv");
 
@@ -51,18 +49,9 @@ fetch(px)
     
 }
 
-
-
 function rmiDT(){
 const element = document.getElementById("iDT");
 element.remove(); // Removes thetable with the 'iDT' id
 }
-
-
-
-
-
-
-
 
 cl("Reached End of app-main.js");
