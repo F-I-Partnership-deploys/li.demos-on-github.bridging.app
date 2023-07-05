@@ -46,7 +46,7 @@ fetch(px)
       sorta(document.getElementById("iDT")); 
       cl('SortA done.');
     }else{
-      cl('No tabele detected to allow sortsort.');
+      cl('No tabele detected to allow sort.');
     }
     
 }
