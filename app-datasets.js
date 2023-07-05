@@ -1,3 +1,5 @@
+//Code Copyright 2003 F-I.dev & Bridging.app MIT Licensed see LICENSE.md
+
 const statusGoogleCSVlive = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTshEvW5lTJ-52OrgPFqc9otH9pIt8D6GEkhNTyb82FuB9NElsy7hebcdYsULU3F-R-Y05evfW3MPNL/pub?gid=0&single=true&output=csv';
 
 const ukGoogleCSV = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vS_TzCak9Xx3vdSpUSmrUfVayxgulOwSGlIFWe42OolrRAekbDkk1O-7QRMcWkJ4KC0T-tyzwLkpTLV/pub?gid=0&single=true&output=csv';

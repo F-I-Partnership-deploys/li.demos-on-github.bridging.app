@@ -1,3 +1,5 @@
+//Code Copyright 2003 F-I.dev & Bridging.app MIT Licensed see LICENSE.md
+
 // Ctrl C + V > index.html
 const varVer = "2023-07-02";			// Version for announcment
 const BATSV = "2023-07-02 - 14:21";	// BATimeStampVer 

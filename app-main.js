@@ -1,3 +1,4 @@
+//Code Copyright 2003 F-I.dev & Bridging.app MIT Licensed see LICENSE.md
 cl("Starting Main App Code...");
 // Main App Code
 
