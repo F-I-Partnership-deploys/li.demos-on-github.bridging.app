@@ -210,6 +210,9 @@ a:active {
 table tbody tr:nth-child(odd) td:first-child {
   background: black;
 }
+table tbody tr:nth-child(even) td:first-child {
+  color: black;
+}
 
 
 
