@@ -214,13 +214,7 @@
   color: white; 
   text-decoration: none;
  }
- 
- 
- 
- table tbody tr:nth-child(even) td:first-child {
-   color: black;
- }
- 
+  
  table tbody tr:nth-child(even) td:first-child a:link {
   color: black; 
   text-decoration: none;
