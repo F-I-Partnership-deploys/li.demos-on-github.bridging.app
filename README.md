@@ -2,7 +2,7 @@ The objective of this project is to create a PWA that is deployable by finance p
 
 The index.html file loads a PWA in about 30KB of data in addition to this the index file has an initial table of data to be rendered as the First Contentful Paint, this table is about 14-15KB for a minimal dataset of the UK Bridging Market. With the 15KB uk dataset the PWA served from GitHub as a page attains consistently 90% or better in the main Google Lighthouse measurments managing to attain 98% in performance.
 
-The dataset delivered as table will likely quadruple or octdruple in the number of html nodes at 3 columns and ~60 lines pplus the other html elements the number of nodes is comfortable below 10k, when it approaches 10k or suffers enough performance degredation some changes will be made to the app to deliver a first contentful paint above the fold.
+The dataset delivered as table will likely quadruple or octdruple in the number of html nodes at 3 columns and ~60 lines pplus the other html elements the number of nodes is comfortable below 1k, when it approaches 1k or suffers enough performance degredation some changes will be made to the app to deliver a first contentful paint above the fold.
 
 The PWA files can be deployed to anything that can serve up some web pages (travel router / anyoldserver.com) and will behave as a SPA or static pages with SPA's.
 
