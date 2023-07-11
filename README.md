@@ -1,10 +1,12 @@
 The objective of this project is to create a PWA that is deployable by finance providers and brokers.
 
-Without helper files which are in the reporsitory and minimal written content the code base and necessary images are less than 142K (158K with a bit of data in the tbody of the indexhtml file)
+The index.html file loads a PWA in about 30KB of data in addition to this the index file has an initial table of data to be rendered as the First Contentful Paint, this table is about 14-15KB for a minimal dataset of the UK Bridging Market. With the 15KB uk dataset the PWA served from GitHub as a page attains consistently 90% or better in the main Google Lighthouse measurments managing to attain 98% in performance.
+
+The dataset delivered as table will likely quadruple or octdruple in the number of html nodes at 3 columns and ~60 lines pplus the other html elements the number of nodes is comfortable below 10k, when it approaches 10k or suffers enough performance degredation some changes will be made to the app to deliver a first contentful paint above the fold.
 
 The PWA files can be deployed to anything that can serve up some web pages (travel router / anyoldserver.com) and will behave as a SPA or static pages with SPA's.
 
-The simplicity of no directory hireachy allows the application to be deployed to the same filespace as the web interface on a OpenWRT system (with the exception of the index.html file, the app is asscessed via the app-main.html page in this usecase).
+The simplicity of no directory hireachy allows the application to be deployed to the same filespace as the web interface on an OpenWRT system (with the exception of the index.html file, the app is then asscessed via a app-main.html page in this usecase).
 
 Keeping the dataset on the index/start page small.
 --------------------------------------------------
