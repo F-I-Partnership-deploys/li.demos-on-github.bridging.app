@@ -1,6 +1,7 @@
-//Code Copyright 2003 F-I.dev & Bridging.app MIT Licensed see LICENSE.md
-cl("Starting Main App Code...");
+cl("Starting Main App Code");
 // Main App Code
+
+
 
 // (A) GET HTML TABLE
 let table = document.getElementById("datafromcsv");
@@ -24,9 +25,9 @@ fetch(px)
 
 // -------------------- End of file -------------------- 
   if (autorun){
-  cl('...autorun to load data');
+cl('...autorun');
   pLD(dLS);
-  cl('data should be loaded');
+cl('data should be loaded');
   setTimeout(() => {
     pLF();
     cl('Links Done First Round');
@@ -34,25 +35,17 @@ fetch(px)
     cl('SortA should be done');
   }, 1000);
 }else{
-    cl('Skipped autorun to load data.');
-    cl('Making links on main...');
-    pLF();
-    cl('...Links on main done.');
-    var findIndexTable =  document.getElementById('iDT');
-    if (typeof(findIndexTable) != 'undefined' && findIndexTable != null)
-    {
-      cl('Initiating SortA...');
-      sorta(document.getElementById("iDT")); 
-      cl('..SortA done.');
-    }else{
-      cl('No tabele detected to allow sort.');
-    }
-    
+    cl('No need to autorun');
 }
 
 function rmiDT(){
 const element = document.getElementById("iDT");
 element.remove(); // Removes thetable with the 'iDT' id
 }
+
+//rmiDT();
+//goxl();
+//createGrid();
+
 
 cl("Reached End of app-main.js");

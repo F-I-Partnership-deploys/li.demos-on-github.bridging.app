@@ -3,8 +3,8 @@
 
 // Minimal Compliance & Documentation Pages for PWA
 en-about-app.html
-en-about-fi.html								About FI
-en-compliance-default-warning.html				Default compliance warning
+en-about-fi.html											About FI
+en-compliance-default-warning.html						Default compliance warning
 en-contact.html
 en-legal-copyright.html
 en-legal-data-rights-minimal.html
@@ -13,39 +13,39 @@ en-legal-spa-website-terms-of-use.html
 //GITHUB
 .gitnore
 README.md
-LICENSE.md										MIT
+LICENSE.md												MIT
 
 //MAIN APP FILES
-index.html										Fast loading HTML index
-404.html										404 Error page
-app-datasets.js									JS/JSON of datasets
-app-default.css									Css for all PWA & compliancepages
-app-interface.js								Get HTML page to App
-app-login.html									Placeholder
-app-pwa.js										PWA functions for pages except index.html
-app-main.js										Main Application
-app-vars.js
+index.html													Fast loading HTML index
+404.html													404 Error page
+app-datasets.js												JS/JSON of datasets
+app-default.css												Css for all PWA & compliancepages
+app-interface.js											Get HTML page to App
+app-login.html												Placeholder
+app-main.html												Main Application
+app-pwa.js													PWA functions for pages except index.html
+app-main.js												Main Application
 
 // Minimal PWA
-SW<YYMMDDv#>.js									Service worker naming format (multiple versions)
-ba						JSON App Manifest		PWA
+SW<YYMMDDv#>.js											Service worker naming format (multiple versions)
+ba						JSON App Manifest						PWA
 l64.png					Logo
 l128.png				Logo
-l192.png				Logo					Maskable (iOS default)	
+l192.png				Logo								Maskable (iOS default)	
 l256.png				Logo
 l512.png				Logo
-vi512.png				Logo					Alt format
-viapp.png				Logo					Alt format
+vi512.png				Logo								Alt format
+viapp.png				Logo								Alt format
 
 //Other
-faveicon.ico			Icon file				Used by all pages
+faveicon.ico			Icon file							Used by all pages
 robots.txt
 
 //Development Files
-filelist.txt									This document
+filelist.txt													This document
 
 //Libraries
-sorta.js										https://code-boxx.com/ MIT
-csv.min.js										https://code-boxx.com/ MIT
-workbox-sw.js									Google Workbox
-workbox-sw.js.map								Code Map
+sorta.js														https://code-boxx.com/ MIT
+csv.min.js													https://code-boxx.com/ MIT
+workbox-sw.js												Google Workbox
+workbox-sw.js.map										Code Map

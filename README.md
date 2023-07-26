@@ -1,12 +1,10 @@
 The objective of this project is to create a PWA that is deployable by finance providers and brokers.
 
-The index.html file loads a PWA in about 30KB of data in addition to this the index file has an initial table of data to be rendered as the First Contentful Paint, this table is about 14-15KB for a minimal dataset of the UK Bridging Market. With the 15KB uk dataset the PWA served from GitHub as a page attains consistently 90% or better in the main Google Lighthouse measurments managing to attain 98% in performance.
-
-The dataset delivered as table will likely quadruple or octdruple in the number of html nodes at 3 columns and ~60 lines pplus the other html elements the number of nodes is comfortable below 1k, when it approaches 1k or suffers enough performance degredation some changes will be made to the app to deliver a first contentful paint above the fold.
+Without helper files which are in the reporsitory and minimal written content the code base and necessary images are less than 142K (158K with a bit of data in the tbody of the indexhtml file)
 
 The PWA files can be deployed to anything that can serve up some web pages (travel router / anyoldserver.com) and will behave as a SPA or static pages with SPA's.
 
-The simplicity of no directory hireachy allows the application to be deployed to the same filespace as the web interface on an OpenWRT system (with the exception of the index.html file, the app is then asscessed via a app-main.html page in this usecase).
+The simplicity of no directory hireachy allows the application to be deployed to the same filespace as the web interface on a OpenWRT system (with the exception of the index.html file, the app is asscessed via the app-main.html page in this usecase).
 
 Keeping the dataset on the index/start page small.
 --------------------------------------------------
@@ -31,13 +29,15 @@ The hope in publishing to GitHub is manyfold:
 
 
 
-Included Libraries
-------------------
-csv.min.js          https://code-boxx.com/ MIT
-sorta.css           https://code-boxx.com/ MIT
-sorta.js            https://code-boxx.com/ MIT
-workbox-sw.js       Google                 MIT
+HELPER FILES
+------------
+Sheetrock.min.js    Chris Z https://chriszarate.github.io/sheetrock/
+jquery.min.js       /*! jQuery v3.1.0 | (c) jQuery Foundation | jquery.org/license */   
+papaparse.min.js    Papa Parse | v5.3.1 | https://github.com/mholt/PapaParse | License: MIT */
+
+Heper files are included (as opposed to beingg served from a CDN) to ensure all files are served from the same origin.
 
 
 
-Heper files are included (as opposed to being served from a CDN) to ensure all files are served from the same origin.
+app-uk-live-sr3* files are used to create the HTML for the index file
+app-status* files are to be intergrated into the app to give status info for the collection of sites
